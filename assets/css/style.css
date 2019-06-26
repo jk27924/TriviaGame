@@ -44,3 +44,17 @@ p {
     margin-top: 40px;
     font-size: 35px;
 }
+
+#end {
+    margin: 40px 0 40px 0;
+}
+
+#submitBtn {
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff; 
+    background-color: #B8A351;
+    border-color: #FFFFFF; 
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
