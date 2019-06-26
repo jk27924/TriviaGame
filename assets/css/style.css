@@ -69,3 +69,17 @@ p {
     width: 400px;
     height: 120px;
 }
+
+#footer p1,
+#footer p2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#footer p1 {
+    font-family: 'Josefin Slab', serif;
+}
+#footer p2 {
+    font-family: 'Amatic SC', cursive;
+}
