@@ -50,6 +50,11 @@ $(document).ready(function () {
         counter = setInterval(decrement, 1000);
     }
 
+    function decrement() {
+        number--;
+        $('#show-number').html('<h2>' + number + " seconds left" + '</h2>');
+    }
 
+    run();
 
 });
