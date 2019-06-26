@@ -56,6 +56,16 @@ $(document).ready(function () {
     function decrement() {
         number--;
         $('#show-number').html('<h2>' + number + " Seconds Left" + '</h2>');
+
+        if (number == 0) {
+            stop ();
+        } else if (number !==0) {
+            $("#submitBtn").on("click", stop);
+        }
+    }
+
+    function stop() {
+        clearInterval(counter);
     }
 
     run();
