@@ -32,7 +32,7 @@ p {
     height: 100px;
     color: white;
     background-color: rgb(107, 107, 207);
-    /* display: none; */
+    display: none;
 }
 
 #questions-box label {
