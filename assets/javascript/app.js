@@ -36,9 +36,16 @@
 
 $(document).ready(function () {
 
+    $("#startBtn").on("click", start);
+
+    var number;
+
+    function start() {
+        number = 10;
+        $(".start").hide();
+        $("#show-number").show();
+    }
 
 
 
-
-    
 });

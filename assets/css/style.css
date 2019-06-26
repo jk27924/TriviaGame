@@ -30,7 +30,7 @@ p {
 
 #show-number{
     height: 100px;
-    color: rgb(116, 230, 116);
+    color: white;
     background-color: rgb(107, 107, 207);
     /* display: none; */
 }
