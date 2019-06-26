@@ -46,6 +46,10 @@ $(document).ready(function () {
         $("#show-number").show();
     }
 
+    function run() {
+        counter = setInterval(decrement, 1000);
+    }
+
 
 
 });
