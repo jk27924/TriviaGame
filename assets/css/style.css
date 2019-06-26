@@ -54,7 +54,18 @@ p {
     margin: 0 auto;
     color: #ffffff; 
     background-color: #B8A351;
-    border-color: #FFFFFF; 
     font-size: 40px;
     font-family: 'Amatic SC', cursive;
+}
+
+#footer {
+    background-color: white;
+    border-top: 1px solid rgb(228, 225, 225);
+    bottom: 0;
+    text-align: center;
+}
+
+#footer img {
+    width: 400px;
+    height: 120px;
 }
