@@ -28,6 +28,13 @@ p {
     font-family: 'Amatic SC', cursive;
 }
 
+#show-number{
+    height: 100px;
+    color: rgb(116, 230, 116);
+    background-color: rgb(107, 107, 207);
+    /* display: none; */
+}
+
 #questions-box label {
     margin-top: 30px;
     font-family: 'Josefin Slab', serif;
