@@ -33,3 +33,9 @@ p {
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
 }    
+
+#questions-box {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 0 auto;
+}
