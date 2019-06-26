@@ -39,3 +39,8 @@ p {
     text-align: center;
     margin: 0 auto;
 }
+
+#questions-box .question {
+    margin-top: 40px;
+    font-size: 35px;
+}
