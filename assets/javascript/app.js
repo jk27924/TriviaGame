@@ -39,11 +39,14 @@ $(document).ready(function () {
     $("#startBtn").on("click", start);
 
     var number;
+    var counter = 0;
 
     function start() {
         number = 10;
+        counter;
         $(".start").hide();
         $("#show-number").show();
+        $('#show-number').append(decrement);
     }
 
     function run() {
@@ -52,7 +55,7 @@ $(document).ready(function () {
 
     function decrement() {
         number--;
-        $('#show-number').html('<h2>' + number + " seconds left" + '</h2>');
+        $('#show-number').html('<h2>' + number + " Seconds Left" + '</h2>');
     }
 
     run();
