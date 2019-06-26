@@ -8,3 +8,14 @@ body {
 height: 200px;
 width: 600px;
 }
+
+h1 {
+    font-size: 70px;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
