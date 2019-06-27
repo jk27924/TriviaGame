@@ -75,7 +75,7 @@
         }
     
         function submit () {
-            for (var i = 0; i <= 5; i++) {
+            for (var i = 1; i <= 5; i++) {
                 var selected = $("input[name=q" +i+ "]:checked").val();
 
                 if (selected == 'correct') {
