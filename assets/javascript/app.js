@@ -34,40 +34,54 @@
     // Hide Restart Button / Show Submit Button
 
 
-$(document).ready(function () {
+    $(document).ready(function () {
 
-    $("#startBtn").on("click", start);
-
-    var number;
-    var counter = 0;
-
-    function start() {
-        number = 10;
-        counter;
-        $(".start").hide();
-        $("#show-number").show();
-        $('#show-number').append(decrement);
-    }
-
-    function run() {
-        counter = setInterval(decrement, 1000);
-    }
-
-    function decrement() {
-        number--;
-        $('#show-number').html('<h2>' + number + " Seconds Left" + '</h2>');
-
-        if (number == 0) {
-            stop ();
-        } else if (number !==0) {
-            $("#submitBtn").on("click", stop);
+        $("#startBtn").on("click", start);
+    
+        var number;
+        var counter = 0;
+        var correct = 0;
+        var wrong = 0;
+    
+        function start() {
+            number = 10;
+            counter;
+            $(".start").hide();
+            $("#show-number").show();
+            $('#show-number').append(decrement);
         }
-    }
+    
+        function run() {
+            counter = setInterval(decrement, 1000);
+        }
+    
+        function decrement() {
+            number--;
+            $('#show-number').html('<h2>' + number + " Seconds Left" + '</h2>');
+    
+            if (number == 0) {
+                stop ();
+            } else if (number !==0) {
+                $("#submitBtn").on("click", stop);
+            }
+        }
+    
+        function stop() {
+            clearInterval(counter);
+        }
+    
+        run();
 
-    function stop() {
-        clearInterval(counter);
-    }
+        function submit () {
+            for (var i = 0; i <= 5; i++) {
+                var selected = $("input[name=q" +i+ "]:checked").val();
 
-    run();
-
-});
+                if (selected == 'correct') {
+                    correct++;
+                } else {
+                    wrong++;
+                }
+            }
+        }
+    
+    });
