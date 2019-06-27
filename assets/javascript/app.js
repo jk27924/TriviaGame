@@ -61,9 +61,8 @@
     
             if (number == 0) {
                 stop ();
-            } else if (number !==0) {
-                $("#submitBtn").on("click", stop);
-            }
+                submit ();
+            } 
         }
     
         function stop() {
@@ -86,6 +85,7 @@
             $("#questions-box").hide();
             stop();
             $("#results").show();
+            $(".start").show();
             $("#correct").text("Answers Correct: " + correct);
             $("#wrong").text("Answers Wrong: " + wrong);
             $("#submitBtn").hide();
