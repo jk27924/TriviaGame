@@ -52,7 +52,7 @@
             $("#questions-box").show();
             $("#results").hide();
             $("#submitBtn").show();
-            
+
             run();
         }
     
@@ -97,5 +97,7 @@
             correct = 0;
             wrong = 0;
         }
-    
+        
+        $("#submitBtn").on("click", submit);
+
     });
