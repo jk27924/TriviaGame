@@ -44,12 +44,15 @@
         var wrong = 0;
     
         function start() {
-            number = 5;
+            number = 30;
             counter;
             $(".start").hide();
             $("#show-number").show();
             $('#show-number').append(decrement);
-
+            $("#questions-box").show();
+            $("#results").hide();
+            $("#submitBtn").show();
+            
             run();
         }
     
