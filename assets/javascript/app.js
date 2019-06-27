@@ -82,6 +82,16 @@
                     wrong++;
                 }
             }
+
+            $("#questions-box").hide();
+            stop();
+            $("#results").show();
+            $("#correct").text("Answers Correct: " + correct);
+            $("#wrong").text("Answers Wrong: " + wrong);
+            $("#submitBtn").hide();
+
+            correct = 0;
+            wrong = 0;
         }
     
     });
