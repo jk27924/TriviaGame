@@ -15,10 +15,10 @@
 
 // 3 - a. 
 // When timer is Stopped,
-    // Evaluate the Answers
+    // Automatically evaluate the Answers
     // Hide Timer
     // Hide Questions / Show Results
-    // Hide Submit Button / Show Restart Button
+    // Hide Submit Button / Show Start Button
 
 // 3 - b. 
 // When quiz is done before timer stops,
@@ -26,12 +26,11 @@
         // Evaluate the Answers
         // Hide Timer
         // Hide Questions / Show Results
-        // Hide Submit Button / Show Restart Button
+        // Hide Submit Button / Show Start Button
 
-// 4. Click Restart button,
-    // Hide Timer / Show Start Button
+// 4. Re-Click Start button,
     // Hide Results / Show Questions
-    // Hide Restart Button / Show Submit Button
+    // Hide Start Button / Show Submit Button
 
 
     $(document).ready(function () {
@@ -77,6 +76,9 @@
         function submit () {
             for (var i = 1; i <= 5; i++) {
                 var selected = $("input[name=q" +i+ "]:checked").val();
+                // This helps to evaluate the answers, when submitted.
+                // For Loop is used, so I do not need to repeat same thing for five questions.
+                // i starts from 1, not 0, because with 0, the game will read as there are 6 questions.
 
                 if (selected == 'correct') {
                     correct++;
@@ -93,9 +95,11 @@
             $("#wrong").text("Answers Wrong: " + wrong);
             $("#submitBtn").hide();
             $("input:radio:checked").prop("checked", false);
+            // This helps radio buttons become unchecked after submitting the quiz.
 
             correct = 0;
             wrong = 0;
+            // These will clear out the result.
         }
         
         $("#submitBtn").on("click", submit);
