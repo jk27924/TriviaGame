@@ -44,7 +44,7 @@
         var wrong = 0;
     
         function start() {
-            number = 10;
+            number = 5;
             counter;
             $(".start").hide();
             $("#show-number").show();
