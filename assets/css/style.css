@@ -52,6 +52,14 @@ p {
     font-size: 35px;
 }
 
+#results { 
+    margin-top: 30px;
+    height: 60px;
+    color: white;
+    background-color: blue;
+    /* display: none; */
+}
+
 #end {
     margin: 40px 0 40px 0;
 }
