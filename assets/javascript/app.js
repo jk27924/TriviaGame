@@ -49,6 +49,8 @@
             $(".start").hide();
             $("#show-number").show();
             $('#show-number').append(decrement);
+
+            run();
         }
     
         function run() {
@@ -69,8 +71,6 @@
             clearInterval(counter);
         }
     
-        run();
-
         function submit () {
             for (var i = 0; i <= 5; i++) {
                 var selected = $("input[name=q" +i+ "]:checked").val();
@@ -89,6 +89,7 @@
             $("#correct").text("Answers Correct: " + correct);
             $("#wrong").text("Answers Wrong: " + wrong);
             $("#submitBtn").hide();
+            $("input:radio:checked").prop("checked", false);
 
             correct = 0;
             wrong = 0;
